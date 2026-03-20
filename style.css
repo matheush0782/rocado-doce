@@ -1,0 +1,91 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fff8f0;
+  text-align: center;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #ff7a18, #ffb347);
+  color: white;
+  padding: 20px;
+}
+
+/* Títulos */
+h2 {
+  color: #d35400;
+}
+
+/* Espaçamento das seções */
+section {
+  padding: 20px;
+}
+
+/* Layout dos produtos (mobile first) */
+#produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Card de cada produto */
+.produto {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  /* Mantém alinhamento interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Padronização das imagens */
+.produto img {
+  width: 100%;
+  height: 200px; /* altura fixa */
+  object-fit: contain; /* evita corte */
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botões de quantidade */
+button {
+  background: #ff7a18;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background: #e56700;
+}
+
+/* Rodapé fixo com total */
+footer {
+  background: #ffb347;
+  padding: 15px;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+  #produtos {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .produto {
+    width: 30%;
+  }
+}
